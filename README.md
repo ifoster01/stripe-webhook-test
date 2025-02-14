@@ -26,7 +26,7 @@ Set up event forwarding with the CLI to send all Stripe events in test mode to y
 stripe listen --forward-to localhost:4242/webhook
 ~~~
 
-Make sure to copy the webhook secret (whsec_...) provided by the CLI and paste it in the .env file.
+Make sure to copy the webhook secret (whsec_...) provided by the CLI and paste it in your .env file.
 
 Use the CLI to simulate specific events that test your webhook application logic by sending a POST request to your webhook endpoint with a mocked Stripe event object.
 
